@@ -89,13 +89,26 @@
         <h2>Courier partners</h2>
         <p>We are a franchise of Shree Mahavir Courier Service and also book shipments with other leading courier brands.</p>
       </div>
-      <div class="partners">
-        <span class="partner">Shree Mahavir Courier Service</span>
-        <span class="partner">Trackon</span>
-        <span class="partner">DTDC</span>
-        <span class="partner">and more</span>
+      <!-- Partner slider. To show a brand's official logo, put the file at partners/<file>.png
+           (the names below); until the file exists, the brand's name is shown instead. -->
+      <div class="slider" aria-label="Courier partners">
+        <div class="slider-track">
+          <div class="logo-tile"><img src="partners/mahavir.png" alt="Shree Mahavir Courier Service" onerror="this.remove()"><span>Shree Mahavir Courier</span></div>
+          <div class="logo-tile"><img src="partners/maruti.png" alt="Shree Maruti Courier" onerror="this.remove()"><span>Shree Maruti Courier</span></div>
+          <div class="logo-tile"><img src="partners/nandan.png" alt="Shree Nandan Courier" onerror="this.remove()"><span>Shree Nandan Courier</span></div>
+          <div class="logo-tile"><img src="partners/trackon.png" alt="Trackon" onerror="this.remove()"><span>Trackon</span></div>
+          <div class="logo-tile"><img src="partners/dtdc.png" alt="DTDC" onerror="this.remove()"><span>DTDC</span></div>
+          <div class="logo-tile"><img src="partners/madhur.png" alt="Madhur Courier" onerror="this.remove()"><span>Madhur Courier</span></div>
+          <!-- Copy of the same tiles so the loop is seamless (hidden from screen readers). -->
+          <div class="logo-tile" aria-hidden="true"><img src="partners/mahavir.png" alt="" onerror="this.remove()"><span>Shree Mahavir Courier</span></div>
+          <div class="logo-tile" aria-hidden="true"><img src="partners/maruti.png" alt="" onerror="this.remove()"><span>Shree Maruti Courier</span></div>
+          <div class="logo-tile" aria-hidden="true"><img src="partners/nandan.png" alt="" onerror="this.remove()"><span>Shree Nandan Courier</span></div>
+          <div class="logo-tile" aria-hidden="true"><img src="partners/trackon.png" alt="" onerror="this.remove()"><span>Trackon</span></div>
+          <div class="logo-tile" aria-hidden="true"><img src="partners/dtdc.png" alt="" onerror="this.remove()"><span>DTDC</span></div>
+          <div class="logo-tile" aria-hidden="true"><img src="partners/madhur.png" alt="" onerror="this.remove()"><span>Madhur Courier</span></div>
+        </div>
       </div>
-      <p class="note">Brand names belong to their respective owners. We help you choose the right service for your destination, timeline and budget.</p>
+      <p class="note">and more. Brand names and logos belong to their respective owners. We help you choose the right service for your destination, timeline and budget.</p>
     </div>
   </section>
 
@@ -121,7 +134,26 @@
     </div>
   </section>
 
-  <section id="contact" class="contact section-soft">
+  <section id="reviews" class="section-soft">
+    <div class="wrap">
+      <div class="section-title">
+        <h2>What our customers say</h2>
+        <p>Your feedback helps us serve you better.</p>
+      </div>
+      <div class="grid grid-3">
+        <!-- Add real customer reviews only (with the customer's permission). Copy this block for each one:
+        <figure class="card testimonial">
+          <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+          <blockquote>"The customer's own words."</blockquote>
+          <figcaption><strong>Customer name</strong><span>Area, City</span></figcaption>
+        </figure>
+        -->
+      </div>
+      <p class="note"><a class="btn btn-primary" href="https://www.google.com/maps/search/?api=1&amp;query=Divija+Enterprise+Odhav+Ahmedabad" target="_blank" rel="noopener">Happy with our service? Review us on Google</a></p>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
     <div class="wrap">
       <div>
         <div class="section-title" style="text-align:left;margin-bottom:16px">
