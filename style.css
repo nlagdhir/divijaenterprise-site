@@ -118,6 +118,18 @@ section { padding: 72px 0; }
   .slider-track [aria-hidden="true"] { display: none; }
 }
 
+/* Card slider (promises / reviews) */
+.slider-cards { padding: 4px 0 8px; }
+.slider-track.slow { animation-duration: 45s; align-items: stretch; }
+.slider-cards .card { flex: 0 0 auto; width: 300px; margin: 0; }
+.promise { display: flex; flex-direction: column; gap: 12px; }
+.promise-icon {
+  width: 44px; height: 44px; border-radius: 12px; background: #fbeced; color: var(--red);
+  display: grid; place-items: center; font-size: 1.3rem; font-weight: 700;
+}
+.promise blockquote { margin: 0; color: var(--text); flex: 1; }
+.promise figcaption strong { color: var(--ink); font-family: "Oswald", "Arial Narrow", sans-serif; letter-spacing: 0.03em; text-transform: uppercase; }
+
 /* Testimonials */
 .testimonial { margin: 0; display: flex; flex-direction: column; gap: 12px; }
 .testimonial .stars { color: #e3a008; letter-spacing: 2px; }
